@@ -7,10 +7,12 @@ $('.menu-button').on('click', function(event) {
 $(document).ready(function(){
 
   $.ajaxSetup({cache:false});
-  
+
   $(".menu-item a").click(function(event){
 
     event.preventDefault();
+    $('.menu-item a').removeClass('current');
+    $(this).addClass('current');
 
     var page_link = $(this).attr("href");
 

@@ -27,7 +27,8 @@
     font-weight: 400;
     position: relative;
 
-    &:hover {
+    &:hover,
+    &.current {
       &:after {
         width: 100%;
       }
