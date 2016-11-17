@@ -32,3 +32,6 @@ wp-content/*
 ## Other rules down here.
 
 /wp-content/themes/portfolio/assets/css
+/wp-content/themes/portfolio/assets/sass/vendor/bourbon
+/wp-content/themes/portfolio/assets/sass/vendor/base
+/wp-content/themes/portfolio/assets/sass/vendor/neat
