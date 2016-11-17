@@ -1,20 +1,67 @@
 .header {
+  position: absolute;
+  background-color: lighten($black, 15%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   &__nav {
-    font-family: $title-font;
+    font-family: $nav-font;
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    @include transform(translateY(-50%));
+    text-align: center;
   }
   li {
-    display: inline-block;
+    display: block;
     margin-right: 50px;
   }
   a {
     color: $body-color;
-    font-size: 28px;
+    font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
-    @include transition(box-shadow .2s ease-in-out);
+    position: relative;
+
     &:hover {
-       box-shadow: 0px 2px 0px 0px white;
+      &:after {
+        width: 100%;
+      }
     }
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      @include transform(translateY(-50%) skewX(-20deg));
+      content: '';
+      width: 0;
+      height: 20px;
+      background-color: #3c948b;
+      @include transition(width .3s ease-in-out);
+      z-index: -1;
+    }
+
+
+    // @include transition(box-shadow .2s ease-in-out);
+    // &:hover {
+    //    box-shadow: 0px 2px 0px 0px white;
+    // }
+  }
+
+  video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
   }
 }
