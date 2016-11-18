@@ -42,7 +42,7 @@
       content: '';
       width: 0;
       height: 20px;
-      background-color: #3c948b;
+      background-color: $aqua-green;
       @include transition(width .3s ease-in-out);
       z-index: -1;
     }

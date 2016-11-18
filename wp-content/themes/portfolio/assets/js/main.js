@@ -2,6 +2,7 @@ $('.menu-button').on('click', function(event) {
   event.preventDefault();
   $(this).toggleClass('menu-open');
   $('#page').toggleClass('menu-open');
+  $('body').toggleClass('menu-open');
 });
 
 $(document).ready(function(){
@@ -21,7 +22,8 @@ $(document).ready(function(){
     setTimeout(function(){
       $('.menu-button').toggleClass('menu-open');
       $('#page').toggleClass('menu-open');
-    }, 1000);
+      $('body').toggleClass('menu-open');
+    }, 2000);
     
 
   return false;

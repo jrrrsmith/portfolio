@@ -7,6 +7,8 @@
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" >
   <title><?php bloginfo('title'); ?></title>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,300,700|Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo('template_url');?>/assets/css/animate.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url');?>/assets/css/style.min.css?<?php echo time(); ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>

@@ -1,4 +1,5 @@
 <?php include 'page-templates/partials/head.php'  ?>
+<div class="menu-button-bg"></div>
 <div class="menu-button">
   <span></span>
 </div>

@@ -1,5 +1,20 @@
 .work {
-  h1 {
-    font-weight: 400;
+  background-color: $black;
+  @include clearfix;
+  text-transform: lowercase;
+
+  &__grid{
+    margin-top: 80px;
+  }
+
+  &__item {
+    display: block;
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+
+    &:nth-of-type(2n+2) {
+      margin-right: 0;
+    }
   }
 }
