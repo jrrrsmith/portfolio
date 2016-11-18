@@ -1,4 +1,8 @@
 <?php include 'page-templates/partials/head.php'  ?>
+<div class="logo-title">
+  <span>internet</span>
+  <span>smith</span>
+</div>
 <div class="menu-button-bg"></div>
 <div class="menu-button">
   <span></span>

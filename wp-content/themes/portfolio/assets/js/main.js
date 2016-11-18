@@ -30,3 +30,12 @@ $(document).ready(function(){
   });
 
 });
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 95) {
+      $('.logo-title').addClass('hide');
+    }
+    else {
+      $('.logo-title').removeClass('hide');
+    }
+});
