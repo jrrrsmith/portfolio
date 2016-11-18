@@ -4,7 +4,7 @@ a{
   &:active,
   &:hover,
   &:focus{
-    color: darken($body-color, 30%);
+    color: inherit;
   }
 }
 

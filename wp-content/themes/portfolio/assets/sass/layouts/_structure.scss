@@ -13,10 +13,10 @@ body {
   font-family: $copy-font;
   margin: 0;
   position: relative;
-  @include perspective(1000px);
 
   &.menu-open {
     overflow: hidden;
+    @include perspective(1000px);
   }
 }
 
@@ -31,17 +31,12 @@ body {
 
   &.menu-open {
     @include transform(scale(.5) rotateY(30deg));
+    overflow: hidden;
   }
 }
 
 figure{
   margin: 0;
-}
-
-a {
-  &:visited {
-    color: inherit;
-  }
 }
 
 img {

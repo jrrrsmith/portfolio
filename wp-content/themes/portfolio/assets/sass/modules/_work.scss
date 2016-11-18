@@ -12,9 +12,42 @@
     width: 45%;
     float: left;
     margin-right: 10%;
+    margin-bottom: 80px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: $aqua-green;
+      height: 100%;
+      width: 100%;
+      @include transform(scale(0.7));
+      @include transition(all .3s ease-in-out);
+      z-index: -1;
+    }
+
+    &:hover {
+      &:before {
+        @include transform(scale(1.1));
+      }
+    }
+
+    img,
+    h3 {
+      cursor: pointer;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
 
     &:nth-of-type(2n+2) {
       margin-right: 0;
+    }
+
+    &__details {
+      display: none;
+      background-color: $aqua-green;
     }
   }
 }

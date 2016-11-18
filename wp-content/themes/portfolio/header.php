@@ -4,10 +4,7 @@
   <span></span>
 </div>
 <header class="header">
-  <video poster="<?php bloginfo('template_url');?>/assets/images/coding.jpg" id="bgvid" playsinline autoplay muted loop>
-    <source src="<?php bloginfo('template_url');?>/assets/video/coding.webm" type="video/webm">
-    <source src="<?php bloginfo('template_url');?>/assets/video/coding.mp4" type="video/mp4">
-  </video>
+  
   <div class="wrap">
     <?php
         wp_nav_menu( array( 

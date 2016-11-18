@@ -13,8 +13,14 @@
       <?php if( have_rows('work') ): ?>
         <?php while( have_rows('work') ): the_row(); ?>
           <a class="work__item animated bounceInUp" href="<?php the_sub_field('link')?>" target="_blank">
-            <img src="<?php the_sub_field('image')?>" />
-            <h3><?php the_sub_field('title')?></h3>
+            <div class="work__item__top">
+              <img src="<?php the_sub_field('image')?>" />
+              <h3><?php the_sub_field('title')?></h3>
+            </div>
+            <div class="work__item__details">
+              <p><?php the_sub_field('details')?></p>
+              <a href="<?php the_sub_field('link')?>" target="_blank">link</a>
+            </div>
           </a>
         <?php endwhile; ?>
       <?php endif; ?>
