@@ -6,6 +6,7 @@ $('.menu-button').on('click', function(event) {
 });
 
 $('#menu-item-46 a').addClass('current');
+$('#menu-item-29 a').addClass('current');
 
 $(document).ready(function(){
 
