@@ -1,0 +1,20 @@
+.bio {
+  font-size: 60px;
+  max-width: 600px;
+}
+
+// .contact {
+//   background-image: url(../images/terminal.svg);
+//   background-size: cover;
+// }
+
+.contact-links {
+  font-size: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+
+  a:hover {
+    color: $aqua-green;
+  }
+}

@@ -5,6 +5,8 @@ $('.menu-button').on('click', function(event) {
   $('body').toggleClass('menu-open');
 });
 
+$('#menu-item-46 a').addClass('current');
+
 $(document).ready(function(){
 
   $.ajaxSetup({cache:false});

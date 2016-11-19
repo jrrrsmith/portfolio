@@ -33,6 +33,7 @@ Text Domain: f&fbymary
 @import "vendor/base/base"; // Bitters
 @import "grid-settings";
 @import "vendor/neat/neat";
+@import "vendor/animate";
 
 
 
@@ -54,6 +55,7 @@ Text Domain: f&fbymary
 @import "components/menu-button";
 @import "components/headings";
 @import "components/animations";
+@import "components/icomoon";
 
 /*--------------------------------------------------------------
 6.0 Layout and Structure
@@ -67,3 +69,4 @@ Text Domain: f&fbymary
 @import "modules/header";
 @import "modules/work";
 @import "modules/home";
+@import "modules/bio";
