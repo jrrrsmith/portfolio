@@ -1,6 +1,10 @@
 .bio {
   font-size: 60px;
   max-width: 600px;
+  @include media($tablet) {
+    font-size: 30px;
+    margin-top: 40px;
+  }
 }
 
 .contact {

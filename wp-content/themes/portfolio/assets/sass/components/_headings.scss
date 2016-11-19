@@ -1,6 +1,9 @@
 .page-title {
   font-size: 50px;
   margin-bottom: 0;
+  // @include media($tablet) {
+  //   max-width: 500px;
+  // }
 }
 
 .internet-title {

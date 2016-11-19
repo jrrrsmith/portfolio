@@ -5,6 +5,10 @@
 
   &__grid{
     margin-top: 80px;
+
+    @include media($tablet) {
+      margin-top: 40px;
+    }
   }
 
   &__item {
@@ -15,6 +19,12 @@
     margin-bottom: 80px;
     position: relative;
 
+    @include media($tablet) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
     &:before {
       position: absolute;
       content: '';
@@ -24,6 +34,10 @@
       @include transform(scale(0.7));
       @include transition(all .3s ease-in-out);
       z-index: -1;
+
+      @include media($tablet) {
+        display: none;
+      }
     }
 
     &:hover {
