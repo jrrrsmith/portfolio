@@ -1,12 +1,11 @@
 <?php
 
 /**
- * Template Name: Home Page
+ * Template Name: Landing Page
  */
 
-get_header(); 
-
 ?>
+
 <section class="landing-page wrap">
   <h2 class="page-title title-one">the web development</h2>
   <h2 class="page-title title-two">portfolio of</h2>
@@ -14,4 +13,3 @@ get_header();
 <!--   <div class="home__inner">
   </div> -->
 </section>
-<?php get_footer(); ?>
