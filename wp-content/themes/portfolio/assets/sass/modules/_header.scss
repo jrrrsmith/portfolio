@@ -29,6 +29,9 @@
 
     &:hover,
     &.current {
+      @include media($tablet) {
+        color: $aqua-green;
+      }
       &:after {
         width: 100%;
       }
@@ -45,6 +48,10 @@
       background-color: $aqua-green;
       @include transition(width .3s ease-in-out);
       z-index: -1;
+
+      @include media($tablet) {
+        display: none;
+      }
     }
 
 
@@ -54,17 +61,6 @@
     // }
   }
 
-  video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .logo-title {

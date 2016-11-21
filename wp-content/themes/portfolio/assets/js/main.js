@@ -25,8 +25,11 @@ $(document).ready(function(){
     setTimeout(function(){
       $('.menu-button').toggleClass('menu-open');
       $('#page').toggleClass('menu-open');
-      $('body').toggleClass('menu-open');
     }, 2000);
+
+    setTimeout(function(){
+      $('body').toggleClass('menu-open');
+    }, 3000);
     
 
   return false;
