@@ -1,4 +1,4 @@
-$('.page-delay').on('click', function(event) {
+$('.menu-button').on('click', function(event) {
   event.preventDefault();
   $(this).toggleClass('menu-open');
   $('#page').toggleClass('menu-open');
