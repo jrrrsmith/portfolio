@@ -30,7 +30,7 @@
     &:hover,
     &.current {
       @include media($tablet) {
-        color: $aqua-green;
+        color: $highlight-color;
       }
       &:after {
         width: 100%;
@@ -45,7 +45,7 @@
       content: '';
       width: 0;
       height: 20px;
-      background-color: $aqua-green;
+      background-color: $highlight-color;
       @include transition(width .3s ease-in-out);
       z-index: -1;
 

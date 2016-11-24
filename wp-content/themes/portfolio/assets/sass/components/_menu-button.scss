@@ -5,11 +5,11 @@
   height: 50px;
   width: 50px;
   z-index: 1;
-  background-color: $aqua-green;
+  background-color: $highlight-color;
   @include transition(background-color .3s ease-in-out);
 
   &.menu-open {
-    background-color: red;
+    background-color: $body-bg;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   span {
-    color: $white;
+    color: $body-color;
     position: absolute;
     left: 50%;
     top: 0;

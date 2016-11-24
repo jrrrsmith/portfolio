@@ -1,5 +1,5 @@
 .work {
-  background-color: red;
+  background-color: $body-bg;
   @include clearfix;
   text-transform: lowercase;
 
@@ -28,7 +28,7 @@
     &:before {
       position: absolute;
       content: '';
-      background-color: $aqua-green;
+      background-color: $highlight-color;
       height: 100%;
       width: 100%;
       @include transform(scale(0.7));
@@ -61,7 +61,7 @@
 
     &__details {
       display: none;
-      background-color: $aqua-green;
+      background-color: $highlight-color;
     }
   }
 }

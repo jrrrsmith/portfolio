@@ -5,12 +5,17 @@
 $black: #000000;
 $white: #ffffff;
 $aqua-green: #3c948b;
+$red: red;
+$mint: #ACFCD9;
+$light-purple: #B084CC;
+$dark-purple: #190933;
+
 
 // General Site Colors
 
-$body-bg: red;
+$body-bg: $red;
 $body-color: $white;
-
+$highlight-color: $aqua-green;
 //Fonts
 
 // $title-font: 'Source Sans Pro', sans-serif;
