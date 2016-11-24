@@ -2,7 +2,7 @@ $('.menu-button').on('click', function(event) {
   event.preventDefault();
   $(this).toggleClass('menu-open');
   $('#page').toggleClass('menu-open');
-  $('body').addClass('menu-open');
+  $('body').toggleClass('menu-open');
 });
 
 $('#menu-item-46 a').addClass('current');

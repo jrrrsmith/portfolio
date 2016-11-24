@@ -6,6 +6,11 @@
   width: 50px;
   z-index: 1;
   background-color: $aqua-green;
+  @include transition(background-color .3s ease-in-out);
+
+  &.menu-open {
+    background-color: red;
+  }
 }
 
 .menu-button {
