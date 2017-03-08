@@ -1,7 +1,7 @@
 <?php get_header();?>
-  <div class="blog-index">
+  <div class="post-item">
   <?php while(have_posts()) : the_post(); ?>
-    <div class="blog-index__item">
+    <div class="blog-post">
       <?php the_content('Read More'); ?>
     </div>
   <?php endwhile; ?>
