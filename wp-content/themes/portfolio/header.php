@@ -8,7 +8,6 @@
   <span></span>
 </div>
 <header class="header">
-  
   <div class="wrap">
     <?php
         wp_nav_menu( array( 
