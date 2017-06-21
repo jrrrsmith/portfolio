@@ -28,6 +28,7 @@ wp-content/*
 
 ### Except the theme
 !/wp-content/themes/portfolio
+!/wp-content/themes/portfolio-v2
 
 ## Other rules down here.
 
