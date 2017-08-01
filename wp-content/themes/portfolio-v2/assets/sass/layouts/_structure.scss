@@ -6,13 +6,39 @@
   box-sizing: border-box;
 }
 body {
-  color: $body-text-color;
-  height: 100%;
-  min-height: 100vh;
+  color: $body-color;
+  background-color: $body-bg;
+  height: 100vh;
   word-break: break-word;
-  font-family: $copy-font;
+  font-family: $title-font;
   margin: 0;
-  background-color: $body-bg-color;
+  position: relative;
+
+  &.menu-open {
+    overflow: hidden;
+    @include perspective(1000px);
+  }
+}
+
+#page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $body-bg;
+  @include transition(all .3s ease-in-out);
+  @include media($tablet) {
+    padding-top: 50px;
+  }
+
+  &.menu-open {
+    @include transform(scale(.5) rotateY(30deg));
+    overflow: hidden;
+    @include media($tablet) {
+      @include transform(scale(.3) rotateY(30deg) translateX(-100%));
+    }
+  }
 }
 
 figure{

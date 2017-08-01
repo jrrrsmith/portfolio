@@ -4,12 +4,21 @@
 
 $black: #000000;
 $white: #ffffff;
+$aqua-green: #3c948b;
+$red: red;
+$mint: #ACFCD9;
+$light-purple: #B084CC;
+$dark-purple: #190933;
 
-$body-bg-color: $black;
-$body-text-color: $white;
 
+// General Site Colors
+
+$body-bg: $black;
+$body-color: $white;
+$highlight-color: $red;
 //Fonts
 
-$title-font: Georgia;
-$copy-font: Helvetica;
-
+// $title-font: 'Source Sans Pro', sans-serif;
+$copy-font: 'Roboto Slab', serif;
+$nav-font: 'Sequel Regular';
+$title-font: 'Roboto Mono', monospace;

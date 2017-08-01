@@ -1,10 +1,10 @@
 a{
-  color: $black;
+  color: $body-color;
   @include transition(all 0.3s ease-in-out);
   &:active,
   &:hover,
   &:focus{
-    color: lighten($black, 30%);
+    color: inherit;
   }
 }
 
@@ -15,4 +15,11 @@ h4,
 h5,
 h6{
   font-family: $title-font;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
 }

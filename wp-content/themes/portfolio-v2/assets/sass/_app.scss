@@ -1,11 +1,11 @@
 /*
-Theme Name: THEME NAME
-Theme URI: https://??.com
+Theme Name: Food & Fitness by Mary
+Theme URI: https://seidelclaims.com
 Author: Jeremy Smith
 Author URI: https://jrrrsmith.com/
-Description: Custom theme for THEME NAME
+Description: Custom theme for Food & Fitness by Mary
 Version: 1.0.0
-Text Domain: DIRECTORY NAME
+Text Domain: f&fbymary
  */
 
  /*--------------------------------------------------------------
@@ -33,6 +33,7 @@ Text Domain: DIRECTORY NAME
 @import "vendor/base/base"; // Bitters
 @import "grid-settings";
 @import "vendor/neat/neat";
+@import "vendor/animate";
 
 
 
@@ -49,7 +50,12 @@ Text Domain: DIRECTORY NAME
 /*--------------------------------------------------------------
 5.0 Components/Add-ons
 --------------------------------------------------------------*/
+@import "components/font-face";
 @import "components/variables";
+@import "components/menu-button";
+@import "components/headings";
+@import "components/animations";
+@import "components/icomoon";
 
 /*--------------------------------------------------------------
 6.0 Layout and Structure
@@ -61,3 +67,6 @@ Text Domain: DIRECTORY NAME
 7.0 Modules
 --------------------------------------------------------------*/
 @import "modules/header";
+@import "modules/work";
+@import "modules/home";
+@import "modules/bio";

@@ -1,0 +1,26 @@
+.bio {
+  font-size: 60px;
+  max-width: 600px;
+  @include media($tablet) {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+}
+
+.contact {
+  background-image: url(../images/computer-2.svg);
+  background-size: cover;
+  height: 100%;
+  background-position: right;
+}
+
+.contact-links {
+  font-size: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+
+  a:hover {
+    color: $highlight-color;
+  }
+}

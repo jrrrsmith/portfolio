@@ -4,8 +4,6 @@
  * Template Name: Work Page
  */
 
-get_header();
-
 ?>
 <section class="work">
 <?php while(have_posts()) : the_post(); ?>
@@ -31,4 +29,3 @@ get_header();
   </div>
 <?php endwhile; ?>
 </section>
-<?php get_footer(); ?>
