@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 body {
-  color: #000;
+  color: $body-text-color;
   height: 100%;
   min-height: 100vh;
   word-break: break-word;
   font-family: $copy-font;
   margin: 0;
+  background-color: $body-bg-color;
 }
 
 figure{
