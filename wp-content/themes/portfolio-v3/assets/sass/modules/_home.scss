@@ -1,0 +1,19 @@
+.landing-page {
+  background-image: url(../images/computer.svg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.email-link {
+  font-family: $title-font;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 30px;
+  font-weight: 900;
+
+  &:hover {
+    color: $highlight-color;
+  }
+}

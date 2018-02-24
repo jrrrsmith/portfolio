@@ -1,0 +1,71 @@
+/* =Structure/Scaffolding
+-------------------------------------------------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color: $body-color;
+  background-color: $body-bg;
+  height: 100vh;
+  word-break: break-word;
+  font-family: $title-font;
+  margin: 0;
+  position: relative;
+
+  &.menu-open {
+    overflow: hidden;
+    @include perspective(1000px);
+  }
+}
+
+#page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $body-bg;
+  @include transition(all .3s ease-in-out);
+  @include media($tablet) {
+    padding-top: 50px;
+  }
+
+  &.fixed {
+    overflow: hidden;
+  }
+
+  &.menu-open {
+    @include transform(scale(.5) rotateY(30deg));
+    overflow: hidden;
+    @include media($tablet) {
+      @include transform(scale(.3) rotateY(30deg) translateX(-100%));
+    }
+  }
+}
+
+figure{
+  margin: 0;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.wrap {
+  @include outer-container;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include media($mobile){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &.wrap--full{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

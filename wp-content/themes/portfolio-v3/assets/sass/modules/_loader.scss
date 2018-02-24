@@ -1,0 +1,160 @@
+@keyframes slideUp {
+  0% {
+    @include transform(translateY(0));
+  }
+  100% {
+    @include transform(translateY(-100vh));
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    @include transform(translateY(0));
+  }
+  100% {
+    @include transform(translateY(100vh));
+  }
+}
+
+.page-loader {
+  text-align: right;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  &--white {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: $white;
+    height: 180px;
+    width: 516px;
+    @include transform(translate(-50%, -50%));
+  }
+
+  &__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+
+  &__top {
+    @include transform(translateX(-300%));
+    transition: transform .3s ease-in-out;
+    &.in {
+      @include transition-delay(.5s);
+    }
+
+    //  &.in {
+    //   @include transition-delay(.5s !important);
+    // }
+  }
+
+  &__bottom {
+    @include transform(translateX(300%));
+    transition: transform .3s ease-in-out;
+    &.in {
+      @include transition-delay(1s);
+    }
+
+  }
+
+  h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+    text-transform: lowercase;
+    line-height: 80px;
+    font-weight: 100;
+    color: $black;
+    //@include transition(transform ease-in-out .3s);
+
+    &.in {
+      @include transform(translateX(0));
+      transition: transform .3s ease-in-out;
+    }
+  }
+}
+
+.initial-load {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: right;
+  z-index: 1;
+
+  &.hide {
+    display: none;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    background-color: $black;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    content: '';
+  }
+
+  &:before {
+    top: 0;
+    @include animation-name(slideUp);
+    @include animation-duration(.5s);
+    @include animation-timing-function(ease-in-out);
+    @include animation-delay(.25s);
+    @include animation-fill-mode(forwards);
+  }
+
+  &:after {
+    bottom: 0;
+    @include animation-name(slideDown);
+    @include animation-duration(.5s);
+    @include animation-timing-function(ease-in-out);
+    @include animation-delay(.75s);
+    @include animation-fill-mode(forwards);
+  }
+
+  &__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+    z-index: 3;
+  }
+
+  &__top {
+    padding: 10px 10px 0;
+    @include animation-name(slideUp);
+    @include animation-duration(.5s);
+    @include animation-timing-function(ease-in-out);
+    @include animation-delay(.25s);
+    @include animation-fill-mode(forwards);
+  }
+
+  &__bottom {
+    padding: 0 10px 10px;
+    @include animation-name(slideDown);
+    @include animation-duration(.5s);
+    @include animation-timing-function(ease-in-out);
+    @include animation-delay(.75s);
+    @include animation-fill-mode(forwards);
+  }
+
+  h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+    text-transform: lowercase;
+    line-height: 80px;
+    font-weight: 100;
+    color: $black;
+    background-color: $white;
+  }
+
+}

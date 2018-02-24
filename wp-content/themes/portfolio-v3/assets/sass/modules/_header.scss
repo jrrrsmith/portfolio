@@ -1,0 +1,98 @@
+.header {
+  position: absolute;
+  background-color: lighten($black, 15%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  &__nav {
+    font-family: $title-font;
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    @include transform(translateY(-50%));
+    text-align: center;
+  }
+  li {
+    display: block;
+    margin-right: 50px;
+  }
+  a {
+    color: $body-color;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    position: relative;
+
+    &:hover {
+      @include media($tablet) {
+        color: $highlight-color;
+      }
+      &:after {
+        width: 100%;
+      }
+    }
+
+    
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      @include transform(translateY(-50%) skewX(-20deg));
+      content: '';
+      width: 0;
+      height: 20px;
+      background-color: $highlight-color;
+      @include transition(width .3s ease-in-out);
+      z-index: -1;
+
+      @include media($tablet) {
+        display: none;
+      }
+    }
+
+
+    // @include transition(box-shadow .2s ease-in-out);
+    // &:hover {
+    //    box-shadow: 0px 2px 0px 0px white;
+    // }
+  }
+
+  .current-menu-item a {
+
+    @include media($tablet) {
+      color: $highlight-color;
+    }
+    &:after {
+      width: 100%;
+    }
+  }
+
+}
+
+.logo-title {
+  position: fixed;
+  right: 50px;
+  top: 0;
+  font-family: $title-font;
+  z-index: 3;
+  line-height: .8;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-right: 10px;
+  text-align: right;
+  opacity: 1;
+  @include transition(opacity .3s ease-in-out);
+
+  &.hide {
+    opacity: 0;
+  }
+
+  span {
+    display: block;
+  }
+}

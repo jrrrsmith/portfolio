@@ -29,6 +29,7 @@ wp-content/*
 ### Except the theme
 !/wp-content/themes/portfolio
 !/wp-content/themes/portfolio-v2
+!/wp-content/themes/portfolio-v3
 
 ## Other rules down here.
 
