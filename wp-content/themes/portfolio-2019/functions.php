@@ -4,14 +4,26 @@
 
   add_theme_support('menus');
 
-  // add_action('init', 'init_remove_support',100);
+  add_action('init', 'init_remove_support',100);
+
+  if( function_exists('acf_add_options_page') ) {
+  
+    acf_add_options_page(array(
+      'page_title'  => 'Contact Info',
+      'menu_title'  => 'Contact Info',
+      'menu_slug'   => 'contact-info',
+      'capability'  => 'edit_posts',
+      'redirect'    => false
+    ));
+    
+  }
 
 
   // function custom_post_type() {
   //  $labels = array(
-  //    'name'                => _x( 'Pages', 'Post Type General Name', 'text_domain' ),
-  //    'singular_name'       => _x( 'Pages', 'Post Type Singular Name', 'text_domain' ),
-  //    'menu_name'           => __( 'Pages', 'text_domain' ),
+  //    'name'                => _x( 'Media', 'Post Type General Name', 'text_domain' ),
+  //    'singular_name'       => _x( 'Media', 'Post Type Singular Name', 'text_domain' ),
+  //    'menu_name'           => __( 'Media', 'text_domain' ),
   //    'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
   //    'all_items'           => __( 'All Items', 'text_domain' ),
   //    'view_item'           => __( 'View Item', 'text_domain' ),
@@ -24,8 +36,8 @@
   //    'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
   //  );
   //  $args = array(
-  //    'label'               => __( 'pages', 'text_domain' ),
-  //    'description'         => __( 'Pages Posts', 'text_domain' ),
+  //    'label'               => __( 'media', 'text_domain' ),
+  //    'description'         => __( 'Media Posts', 'text_domain' ),
   //    'labels'              => $labels,
   //    'supports'            => array( ),
   //    'taxonomies'          => array( 'category', 'post_tag' ),
@@ -42,15 +54,11 @@
   //    'publicly_queryable'  => true,
   //    'capability_type'     => 'page',
   //  );
-  //  register_post_type( 'pages', $args );
+  //  register_post_type( 'media', $args );
   // }
 
   // add_action('pre_get_posts','wpsites_home_page_cpt_filter');
 
   // // Hook into the 'init' action
   // add_action( 'init', 'custom_post_type', 0 );
-
-  register_nav_menus( array(
-    'primary' => esc_html__( 'Primary Menu', 'portfolio' )
-  ) );
 ?>

@@ -6,6 +6,8 @@
 ### Ignore sass cache and node modules
 .sass-cache
 node_modules/
+.vscode
+.vs_code
 
 ### Except markdown files.
 !*.md
@@ -30,6 +32,7 @@ wp-content/*
 !/wp-content/themes/portfolio
 !/wp-content/themes/portfolio-v2
 !/wp-content/themes/portfolio-v3
+!/wp-content/themes/portfolio-2019
 
 ## Other rules down here.
 
@@ -41,3 +44,5 @@ wp-content/*
 /wp-content/themes/portfolio-v2/assets/sass/vendor/bourbon
 /wp-content/themes/portfolio-v2/assets/sass/vendor/base
 /wp-content/themes/portfolio-v2/assets/sass/vendor/neat
+
+/wp-content/themes/portfolio-2019/build/

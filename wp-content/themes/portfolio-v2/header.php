@@ -1,5 +1,5 @@
 <?php include 'page-templates/partials/head.php'  ?>
-<div class="logo-title">
+<div class="logo-title big-jerm">
   <span>internet</span>
   <span>smith</span>
 </div>

@@ -5,7 +5,7 @@
  */
 
 ?>
-<section class="work">
+<section class="work big-jerms-work">
 <?php while(have_posts()) : the_post(); ?>
   <div class="wrap">
     <h2 class="page-title">Selected Works.</h2>
